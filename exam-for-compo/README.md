@@ -1,8 +1,40 @@
+# Reactで作るコンポのExample
+
+## やりたかったこと
+
+- [ ] Reactでコンポーネントを作れるようになる
+  - [ ] 子要素あり
+  - [ ] （オプション）hooksを使う
+- [ ] Reactのライフサイクルを知る
+- [ ] CSS in JS（styled-component）
+  - [ ] SCSS
+  - [ ] アニメーション
+  - [ ] マテリアルデザイン的な
+  - [ ] （オプション）
+- [ ] （オプション）Jestでテストする
+- [ ] storybookでコンポの使い方を出せる
+  - [ ] viewportのエミュレート
+  - [ ] propsを変更
+  - [ ] 説明を記載できる
+
+## 作るコンポ
+
+- [ ] カード
+  - [ ] クリックするとひっくり返る
+  - [ ] おもて面にシンボルと紐付く画像（svgを出せる）
+  - [ ] 薄めのデザイン
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn storybook`
+
+Launches the storybook.
 
 ### `yarn start`
 
@@ -11,6 +43,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
 
 ### `yarn test`
 
