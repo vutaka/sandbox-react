@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./SymbolCard.module.scss";
 
 export class SymbolCard extends React.Component {
   constructor(props) {
@@ -6,7 +7,7 @@ export class SymbolCard extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className={styles.symbol_card}>
         <div>{this.props.message}</div>
       </div>
     );

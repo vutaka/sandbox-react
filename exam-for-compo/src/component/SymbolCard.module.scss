@@ -1,0 +1,10 @@
+@import "../style/colors";
+@import "../style/ratios";
+
+.symbol_card {
+  background-color: $accentSubColor;
+  width: 150px;
+  height: 150px * $silverRatio;
+  border-radius: 5%;
+  box-shadow: 1px 1px 1px $shadowColor;
+}
