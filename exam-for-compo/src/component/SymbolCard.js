@@ -7,8 +7,9 @@ export class SymbolCard extends React.Component {
   }
   render() {
     return (
-      <div className={styles.symbol_card}>
-        <div>{this.props.message}</div>
+      <div className={styles.card}>
+        <div className={styles.card_front}>{this.props.message}</div>
+        <div className={styles.card_back}></div>
       </div>
     );
   }

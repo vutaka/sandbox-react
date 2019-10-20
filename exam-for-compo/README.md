@@ -9,8 +9,8 @@
 - [ ] CSS in JS（CSS modules）
   - [x] SCSS
   - [x] CSS modulesでコンポのみにスタイルが当たる。
-  - [ ] アニメーション
-  - [ ] 影つける
+  - [x] アニメーション
+  - [x] 影つける
   - [ ] SVG表示
 - [ ] （オプション）Jestでテストする
 - [ ] storybookでコンポの使い方を出せる
@@ -37,7 +37,15 @@
 
 ### 他
 
-- JS in CSSは何を取り入れればよかったのか判断が必要になる。CSS modulesとstyled-componentsのどっちかみたい？そもそもBEMだけでもあまり困らないのかもしれない。vueなら単一ファイルコンポーネントにそのまま書ける。
+- JS in CSSについて
+  - ~~JS in CSSは何を取り入れればよかったのか判断が必要になる。CSS modulesとstyled-componentsのどっちかみたい？そもそもBEMだけでもあまり困らないのかもしれない。vueなら単一ファイルコンポーネントにそのまま書ける。~~
+  - Create React AppならデフォルトでCSS Modulesが使える。[create-react-appのページ](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/)
+  - クラス名にハイフンを使うとJSXの中で使えなくなる。引き算と解釈される。。。回避方法ないんかい。
+- CSSのtrasitionが3Dに対応している！
+  - 3Dアニメーションが容易にできる
+  - 内容が結構難しい・・・・
+- コンポーネントの状態によるアニメーションとか
+  - コンポーネントの状態によるアニメーションは [react trasition group](https://github.com/reactjs/react-transition-group)が良さそう
 
 ---
 

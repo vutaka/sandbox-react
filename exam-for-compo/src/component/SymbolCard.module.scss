@@ -1,10 +1,29 @@
 @import "../style/colors";
 @import "../style/ratios";
 
-.symbol_card {
-  background-color: $accentSubColor;
+.card {
+  position: relative;
   width: 150px;
   height: 150px * $silverRatio;
-  border-radius: 5%;
-  box-shadow: 1px 1px 1px $shadowColor;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  & div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    box-shadow: 1px 1px 1px $shadowColor;
+    backface-visibility: hidden;
+  }
+  &_front {
+    background-color: $accentSubColor;
+  }
+  &_back {
+    background-color: $accentMainColor;
+    transform: rotateY(180deg);
+  }
+  &:hover {
+    transform: rotateY(180deg);
+  }
 }
