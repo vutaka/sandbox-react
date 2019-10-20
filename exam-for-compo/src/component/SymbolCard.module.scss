@@ -16,14 +16,16 @@
     box-shadow: 1px 1px 1px $shadowColor;
     backface-visibility: hidden;
   }
-  &_front {
-    background-color: $accentSubColor;
-  }
-  &_back {
-    background-color: $accentMainColor;
-    transform: rotateY(180deg);
-  }
-  &:hover {
-    transform: rotateY(180deg);
-  }
+}
+// デフォルトでは表が隠れた状態
+.front {
+  background-color: $backGroundColor;
+  transform: rotateY(180deg);
+}
+.back {
+  background-color: $accentMainColor;
+
+}
+.open {
+  transform: rotateY(180deg);
 }

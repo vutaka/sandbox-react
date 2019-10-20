@@ -21,7 +21,7 @@
 ## 作るコンポ
 
 - [ ] カード
-  - [ ] クリックするとひっくり返る
+  - [x] クリックするとひっくり返る
   - [ ] おもて面にシンボルと紐付く画像（svgを出せる）
   - [x] 薄めのデザイン
 
@@ -34,6 +34,14 @@
   - addonで色々できるらしい
   - 導入も公式のマニュアルセットアップだけで全然余裕
 - 色とかはSCSSとかで変数化した方が変更に強くなると思う
+- CSS Modules使うならSCSSをネストさせる必要性がなくなる。結局はこのモジュール内に閉じた内容。
+
+### Bad
+
+- JSXのコールバックにおけるthisがきもい。メソッドをバインドしておく必要がある。
+- 回避方法が2つあるが片方は非推奨なので実質1つ。それもまだJavaScriptの仕様になっていないES6のパブリックフィールドを使用するというもの。（流石に廃止されることはないか？）
+  - [Reactのページ：イベント処理](https://ja.reactjs.org/docs/handling-events.html)。
+  - [MDN：クラス](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes)。
 
 ### 他
 
@@ -45,7 +53,10 @@
   - 3Dアニメーションが容易にできる
   - 内容が結構難しい・・・・
 - コンポーネントの状態によるアニメーションとか
-  - コンポーネントの状態によるアニメーションは [react trasition group](https://github.com/reactjs/react-transition-group)が良さそう
+  - リアルタイムなインタラクションでないならclassとCSSだけで実現できるし余計な物を混ぜ込まなくて良い
+  - リアルタイムなインタラクションとかコンポーネントのライフサイクルによるアニメーションは [react trasition group](https://github.com/reactjs/react-transition-group)が良さそう。
+- デフォルトで複数classを出力する機構がなさそう。半角スペース空けるのはダサい。
+  - classnamesの導入が必須になりそう。
 
 ---
 
