@@ -4,8 +4,8 @@
 
 - [ ] Reactでコンポーネントを作れるようになる
   - [ ] 子要素あり
-  - [ ] （オプション）hooksを使う
-- [ ] Reactのライフサイクルを知る
+  - [x] （オプション）hooksを使う
+- [x] Reactのライフサイクルを知る
 - [ ] CSS in JS（CSS modules）
   - [x] SCSS
   - [x] CSS modulesでコンポのみにスタイルが当たる。
@@ -35,6 +35,8 @@
   - 導入も公式のマニュアルセットアップだけで全然余裕
 - 色とかはSCSSとかで変数化した方が変更に強くなると思う
 - CSS Modules使うならSCSSをネストさせる必要性がなくなる。結局はこのモジュール内に閉じた内容。
+- hooksによりFuncitional Componentでstateを持たせることができる。
+  - thisのバインドを気にしなくてよくなる？
 
 ### Bad
 
@@ -42,6 +44,7 @@
 - 回避方法が2つあるが片方は非推奨なので実質1つ。それもまだJavaScriptの仕様になっていないES6のパブリックフィールドを使用するというもの。（流石に廃止されることはないか？）
   - [Reactのページ：イベント処理](https://ja.reactjs.org/docs/handling-events.html)。
   - [MDN：クラス](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes)。
+- hooksを使うとClass Componentとの使い分けが一層わからなくなる。全部Functional Componentでもよくなる。（乱立しそうだからルールはあった方が良い？。）
 
 ### 他
 
@@ -57,6 +60,7 @@
   - リアルタイムなインタラクションとかコンポーネントのライフサイクルによるアニメーションは [react trasition group](https://github.com/reactjs/react-transition-group)が良さそう。
 - デフォルトで複数classを出力する機構がなさそう。半角スペース空けるのはダサい。
   - classnamesの導入が必須になりそう。
+- hooksとreactのライフサイクルが違うからちゃんと覚えないとならない。
 
 ---
 
